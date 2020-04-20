@@ -108,6 +108,7 @@ the higher weighted error rate of a tree, the less decision power the tree will 
 the lower weighted error rate of a tree, the higher decision power the tree will be given during the later voting
 * Step 4: Update weights of wrongly classified points
 
+![](Images/adaboost.png)
 
 ## Gradient Boosting
 Gradient boosting is another boosting model. Remember, boosting model’s key is learning from the previous mistakes.
@@ -117,4 +118,36 @@ Gradient Boosting learns from the mistake — residual error directly, rather th
 * Step 3: Calculate the residual of this decision tree, Save residual errors as the new y
 * Step 4: Repeat Step 1 (until the number of trees we set to train is reached)
 * Step 5: Make the final prediction
+
+![](Images/grbst.png)
+
+# Model Performance Parameters
+### The Confusion matrix 
+Confusion Matrix is one of the most intuitive and easiest (unless of course, you are not confused)metrics used for finding the correctness and accuracy of the model. It is used for Classification problem where the output can be of two or more types of classes.
+True Positives (TP): True positives are the cases when the actual class of the data point was 1(True) and the predicted is also 1(True)
+Ex: The case where a person is actually having cancer(1) and the model classifying his case as cancer(1) comes under True positive.
+2. True Negatives (TN): True negatives are the cases when the actual class of the data point was 0(False) and the predicted is also 0(False
+Ex: The case where a person NOT having cancer and the model classifying his case as Not cancer comes under True Negatives.
+3. False Positives (FP): False positives are the cases when the actual class of the data point was 0(False) and the predicted is 1(True). False is because the model has predicted incorrectly and positive because the class predicted was a positive one. (1)
+Ex: A person NOT having cancer and the model classifying his case as cancer comes under False Positives.
+4. False Negatives (FN): False negatives are the cases when the actual class of the data point was 1(True) and the predicted is 0(False). False is because the model has predicted incorrectly and negative because the class predicted was a negative one. (0)
+Ex: A person having cancer and the model classifying his case as No-cancer comes under False Negatives.
+
+
+
+### Accuracy: 
+Accuracy in classification problems is the number of correct predictions made by the model over all kinds predictions made.
+
+In the Numerator, are our correct predictions (True positives and True Negatives)(Marked as red in the fig above) and in the denominator, are the kind of all predictions made by the algorithm(Right as well as wrong ones).
+
+#### Precision
+Precision is a measure that tells us what proportion of patients that we diagnosed as having cancer, actually had cancer. The predicted positives (People predicted as cancerous are TP and FP) and the people actually having a cancer are TP.
+
+#### Recall (Sensitivity)
+Recall is a measure that tells us what proportion of patients that actually had cancer was diagnosed by the algorithm as having cancer. The actual positives (People having cancer are TP and FN) and the people diagnosed by the model having a cancer are TP. (Note: FN is included because the Person actually had a cancer even though the model predicted otherwise).
+
+#### F1 Score
+The F1 Score is the 2*((precision*recall)/(precision+recall)). It is also called the F Score or the F Measure. Put another way, the F1 score conveys the balance between the precision and the recall.
+
+
 
