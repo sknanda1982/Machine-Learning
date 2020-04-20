@@ -24,7 +24,7 @@ K-Nearest Neighbor is one of the simplest Machine Learning algorithms based on S
 Learning technique-KNN algorithm assumes the similarity between the new case/data and avail-
 able cases and put the new case into the category that is most similar to the available categories-
 KNN algorithm stores all the available data and classies a new data point based on the sim-
-ilarity. This means when new data appears then it can be easily classied into a well suite
+ilarity. This means when new data appears then it can be easily classified into a well suite
 category by using K- NN algorithm. K-NN algorithm can be used for Regression as well as for
 Classification but mostly it is used for the Classification problems.
 Suppose there are two categories, i.e., Category A and Category B, and we have a new data
