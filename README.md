@@ -67,5 +67,18 @@ and the gradients. Using the gradients, we can update our weights.
 
 # Multiple Perceptron (MLP)
 
- 
+ Perceptron Algorithm, in the perceptron we just multiply with weights and add Bias, but we do
+this in one layer only.
+
+![](Images/mlp1.png)
+
+We update the weight when we found an error in classication or miss-classied. Weight update
+equation is this. . .
+weight = weight + learningrate x (expected - predicted) x X
+
+In the Multilayerperceptron; there can more than one linear layer(combinations of neurons):If we take the simple example the three
+layer network;first layer will be the input layer and last will be output layer and middle layer will be called hidden layer: We feed our input data into the input layer
+
+![](Images/mlp2.png)
+
 
