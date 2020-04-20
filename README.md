@@ -42,5 +42,30 @@ maximum.
 * Step-6: Our model is ready.
 
 # Support Vector Machine 
+The objective of the support vector machine algorithm is to nd a hyperplane in an N-dimensional
+space(N | the number of features) that distinctly classies the data points.
+To separate the two classes of data points, there are many possible hyperplanes that could be
+chosen. Our objective is to nd a plane that has the maximum margin, i.e the maximum dis-
+tance between data points of both classes.
 
+![](Images/svm1.png)
+
+In the SVM algorithm, we are looking to maximize the margin between the data points and the
+hyperplane. The loss function that helps maximize the margin is hinge loss.
+
+![](Images/svm2.png)
+
+The cost is 0 if the predicted value and the actual value are of the same sign. If they are not,
+we then calculate the loss value. We also add a regularization parameter the cost function. The
+objective of the regularization parameter is to balance the margin maximization and loss. After
+adding the regularization parameter, the cost functions looks as below.
+
+![](Images/svm3.png)
+
+Now that we have the loss function, we take partial derivatives with respect to the weights to
+and the gradients. Using the gradients, we can update our weights.
+
+# Multiple Perceptron (MLP)
+
+ 
 
