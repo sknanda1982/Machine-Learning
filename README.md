@@ -133,18 +133,24 @@ Ex: A person NOT having cancer and the model classifying his case as cancer come
 4. False Negatives (FN): False negatives are the cases when the actual class of the data point was 1(True) and the predicted is 0(False). False is because the model has predicted incorrectly and negative because the class predicted was a negative one. (0)
 Ex: A person having cancer and the model classifying his case as No-cancer comes under False Negatives.
 
-
+![](Images/cm.png)
 
 ### Accuracy: 
 Accuracy in classification problems is the number of correct predictions made by the model over all kinds predictions made.
+
+![](Images/acc.png)
 
 In the Numerator, are our correct predictions (True positives and True Negatives)(Marked as red in the fig above) and in the denominator, are the kind of all predictions made by the algorithm(Right as well as wrong ones).
 
 #### Precision
 Precision is a measure that tells us what proportion of patients that we diagnosed as having cancer, actually had cancer. The predicted positives (People predicted as cancerous are TP and FP) and the people actually having a cancer are TP.
 
+![](Images/prc.png)
+
 #### Recall (Sensitivity)
 Recall is a measure that tells us what proportion of patients that actually had cancer was diagnosed by the algorithm as having cancer. The actual positives (People having cancer are TP and FN) and the people diagnosed by the model having a cancer are TP. (Note: FN is included because the Person actually had a cancer even though the model predicted otherwise).
+
+![](Images/recall.png)
 
 #### F1 Score
 The F1 Score is the 2*((precision*recall)/(precision+recall)). It is also called the F Score or the F Measure. Put another way, the F1 score conveys the balance between the precision and the recall.
