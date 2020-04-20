@@ -81,4 +81,40 @@ layer network;first layer will be the input layer and last will be output layer 
 
 ![](Images/mlp2.png)
 
+# Random Forest Machine Learning
+Random forest, like its name implies, consists of a large number of individual decision trees that
+operate as an ensemble. Each individual tree in the random forest spits out a class prediction
+and the class with the most votes becomes our model's prediction
+* Step 1 − First, start with the selection of random samples from a given dataset.
+* Step 2 − Next, this algorithm will construct a decision tree for every sample. Then it will get the prediction result from every decision tree.
+* Step 3 − In this step, voting will be performed for every predicted result.
+* Step 4 − At last, select the most voted prediction result as the final prediction result.
+
+![](Images/rf.png)
+
+
+# Ensemble Machine Learning (Adaboost and Gradient Boosting)
+
+## AdaBoost (Adaptive Boosting)
+AdaBoost is a boosting ensemble model and works especially well with the decision tree. Boosting model’s key is learning from the previous mistakes, e.g. misclassification data points.
+AdaBoost learns from the mistakes by increasing the weight of misclassified data points.
+
+* Step 0: Initialize the weights of data points. if the training set has 100 data points, then each point’s initial weight should be 1/100 = 0.01.
+* Step 1: Train a decision tree
+* Step 2: Calculate the weighted error rate (e) of the decision tree. The weighted error rate (e) is just how many wrong predictions out of total and you treat the wrong predictions differently based on its data point’s weight. The higher the weight, the more the corresponding error will be weighted during the calculation of the (e).
+* Step 3: Calculate this decision tree’s weight in the ensemble
+the weight of this tree = learning rate * log( (1 — e) / e)
+the higher weighted error rate of a tree, the less decision power the tree will be given during the later voting
+the lower weighted error rate of a tree, the higher decision power the tree will be given during the later voting
+* Step 4: Update weights of wrongly classified points
+
+
+## Gradient Boosting
+Gradient boosting is another boosting model. Remember, boosting model’s key is learning from the previous mistakes.
+Gradient Boosting learns from the mistake — residual error directly, rather than update the weights of data points.
+* Step 1: Train a decision tree
+* Step 2: Apply the decision tree just trained to predict
+* Step 3: Calculate the residual of this decision tree, Save residual errors as the new y
+* Step 4: Repeat Step 1 (until the number of trees we set to train is reached)
+* Step 5: Make the final prediction
 
