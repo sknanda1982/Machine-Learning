@@ -155,5 +155,13 @@ Recall is a measure that tells us what proportion of patients that actually had 
 #### F1 Score
 The F1 Score is the 2*((precision*recall)/(precision+recall)). It is also called the F Score or the F Measure. Put another way, the F1 score conveys the balance between the precision and the recall.
 
+#### AUC Curve
+ROC (Receiver Operating Characteristic) Curve tells us about how good the model can distinguish between two things (e.g If a patient has a disease or no). Better models can accurately distinguish between the two. Whereas, a poor model will have difficulties in distinguishing between the two. AUC is used most of the time to mean AUROC, which is a bad practice since as Marc Claesen pointed out AUC is ambiguous (could be any curve) while AUROC is not.
+
+# Result
+
+Outpof 7 different Machine Learning Model, Random Forest is perform well:
+
+
 
 
