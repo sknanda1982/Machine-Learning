@@ -31,4 +31,5 @@ Suppose there are two categories, i.e., Category A and Category B, and we have a
 point x1, so this data point will lie in which of these categories. To solve this type of problem,
 we need a K-NN algorithm. With the help of K-NN, we can easily identify the category or class
 of a particular dataset. Consider the below diagram:
+![](Images/knn.png)
 
