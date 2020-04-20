@@ -11,4 +11,4 @@ evaluating the risk factors which increases the heart attack. Here various type 
 
 # LOgistic Regression
 Logistic Regression is a Machine Learning algorithm which is used for the classification problems, it is a predictive analysis algorithm and based on the concept of probability.
-![](images/lr1.png)
+![](Images/lr1.png)
