@@ -1,4 +1,3 @@
-# Machine-Learning
 # Heart Risk Prediction using Machine Learning Algorithm
 Today the heart disease is one of the most important causes of death in the world. So, its early prediction and diagnosis 
 is important in medical field, which could help in on time treatment, decreasing health costs and decreasing death caused by 
@@ -21,3 +20,15 @@ is not possible as per the hypothesis of logistic regression.  Refere
 ##### Model/Log_regression.ipynb
 
 # K-Neareat-Neighbor ML
+K-Nearest Neighbor is one of the simplest Machine Learning algorithms based on Supervised
+Learning technique-KNN algorithm assumes the similarity between the new case/data and avail-
+able cases and put the new case into the category that is most similar to the available categories-
+KNN algorithm stores all the available data and classies a new data point based on the sim-
+ilarity. This means when new data appears then it can be easily classied into a well suite
+category by using K- NN algorithm. K-NN algorithm can be used for Regression as well as for
+Classification but mostly it is used for the Classification problems.
+Suppose there are two categories, i.e., Category A and Category B, and we have a new data
+point x1, so this data point will lie in which of these categories. To solve this type of problem,
+we need a K-NN algorithm. With the help of K-NN, we can easily identify the category or class
+of a particular dataset. Consider the below diagram:
+
